@@ -38,6 +38,7 @@ public class Task1 {
 
         int ameba = 1;
         int numOfHours = 24;
+        //если завел переменную numOfHours, то и используй ее в for (int i = 0; i <= numOfHours; i += 3 )
         for (int i = 0; i <= 24; i += 3 ) {
             ameba = ameba * 2;
         }
@@ -53,8 +54,8 @@ public class Task1 {
         System.out.println("Task 3: ");
 
         int sumOfNumbers = 0;
-        int finalOfNumber = 256;
-
+        int finalOfNumber = 256; //finalNumber :) or finalNum or lastNum
+        //если завел переменную finalOfNumber, то и используй ее в for (int i = 1; i <= finalOfNumber; i += 3 )
         for (int i = 1; i <= 256; i *= 2) {
             sumOfNumbers += i;
         }
@@ -69,10 +70,11 @@ public class Task1 {
 
         System.out.println("Task 4: ");
 
-        int a = 6;
-        int b = 8;
+        int a = 6;//firstNum
+        int b = 8;//secondNum
         int sum = 0;
 
+        //что такое 6 в этом цикле? Напиши i < a
         for (int i = 0; i < 6; i++) {
             sum = sum + b;
         }
@@ -88,12 +90,13 @@ public class Task1 {
 
         System.out.println("Task 5: ");
 
-        double x = 2.54;
-        int n = 0;
+        double x = 2.54;//плохое имя 
+        int n = 0;//плохое имя, эта переменная не нужна
 
+        //20 в переменную, например, lastValue или amount
         for (int i = 1; i <= 20; i++) {
-            double y = i * x;
-            int z = i + n;
+            double y = i * x;// y - плохое имя! Эту переменную можно было и не заводить каждый раз в цикле, а сделать 1 раз перед ним
+            int z = i + n;//эта переменная не нужна. Можно просто в 101 строке делать System.out.println(i + " = " + y);
 
             System.out.println(z + " = " + y);
         }
@@ -109,7 +112,9 @@ public class Task1 {
 
         int numOfEven = 2;
 
-        for (int i = 2; i <= 100; i += 2) {
+        //ты начинаешь цикл с 2-х и каждый раз прибавляешь 2. Они и так все четные будут и без if-else :)
+        //если делать с if, то тогда цикл с 1-ой и i++. Else писать не надо будет
+        for (int i = 2; i <= 100; i += 2) {//100 в переменную!
             if (numOfEven % 2 == 0) {
                 System.out.println(i);
             } else {
@@ -126,8 +131,13 @@ public class Task1 {
 
         System.out.println("Task 7: ");
 
-        int numOfOddNumber = 0;
+        int numOfOddNumber = 0;//sumOfOddNumbers
 
+        /*ну оно-то верно, но давай сделаем  
+        for (int i = 0; i < numOfIterations ; i++) {
+            if(i%2==1) { sum+=i;}
+        }
+        */
         for (int i = 1; i <= 99; i += 2) {
             numOfOddNumber += i;
         }
@@ -148,6 +158,7 @@ public class Task1 {
         int sumOfEven = 0;
         int sumOfOddNumber = 0;
 
+        //можно было сумму четных и нечетных сделать в одном цикле с использованием if-else
         for(int i = 0; i <= 100; i += 2) {
             sumOfEven += i;
 
@@ -181,6 +192,7 @@ public class Task1 {
 
         int num = 4;
 
+        //well..... А цикл в цикле мы не проходили. Эта была супер таска со звездочкой
         for (int i = 1; i <= num; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
