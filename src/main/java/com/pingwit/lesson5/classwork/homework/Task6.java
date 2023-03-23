@@ -15,7 +15,7 @@ public class Task6 {
         }
         System.out.println(Arrays.toString(array1));
 
-        int[] array2 = new int[evenNums];
+        int[] array2 = new int[evenNums];//нейминг мог бы быть получше - arrayOfEvens or ect
         int index = 0;
         for (int i = 0; i < array1.length; i++) {
             if (array1[i] % 2 == 0) {
