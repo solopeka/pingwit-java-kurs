@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class Task4 {
     public static void main(String[] args) {
 
-        int[][] twoDimArray = new int[9][10];
+        int[][] twoDimArray = new int[9][10];//а если я хочу сама решать, какой размерности таблицу мне надо? (СКАННЕР!)
+        //А если бы я сказала создать 100x100? Инициализация только в цикле!      
         twoDimArray[0][0] = 0;
         twoDimArray[0][1] = 1;
         twoDimArray[0][2] = 2;
