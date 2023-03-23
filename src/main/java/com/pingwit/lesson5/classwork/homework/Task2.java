@@ -9,6 +9,7 @@ public class Task2 {
         int[] array = {10, 20, 30, 40, 50};
         int sum = 0;
 
+        //Ок. Но лучше в цикле найти сумму, а после него поделить на длину массива
         for (int i = 0; i < array.length; i++) {
             sum = (sum + array[i] / array.length);
 
